@@ -1,0 +1,1 @@
+CREATE STREAM subscription WITH (KAFKA_TOPIC='mysql_subscription', VALUE_FORMAT ='AVRO');

@@ -1,0 +1,1 @@
+create stream high_value_customers as select * from subscription s where s.product_a = 'Subscribed' and s.product_b = 'Subscribed' emit changes;

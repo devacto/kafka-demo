@@ -1,0 +1,28 @@
+{
+  "name": "mysql-subscription-source-connector",
+  "config": {
+      "connector.class": "io.confluent.connect.jdbc.JdbcSourceConnector",
+      "tasks.max": "1",
+      "connection.url": "jdbc:mysql://mysql:3306/telco",
+      "connection.user": "root",
+      "connection.password": "Admin123",
+      "table.whitelist": "subscription",
+      "mode": "timestamp",
+      "timestamp.column.name": "updated_at",
+      "validate.non.null": true,
+      "poll.interval.ms": "500",
+      "topic.prefix": "mysql_",
+      "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+      "key.converter.schema.registry.url": "http://schema-registry:8081",
+      "key.converter.schemas.enable": "true",
+      "value.converter": "io.confluent.connect.avro.AvroConverter",
+      "value.converter.schema.registry.url": "http://schema-registry:8081",
+      "value.converter.schemas.enable": "true",
+      "db.timezone": "UTC",
+      "transforms":"createKey,extractInt",
+      "transforms.createKey.type":"org.apache.kafka.connect.transforms.ValueToKey",
+      "transforms.createKey.fields":"user_id",
+      "transforms.extractInt.type":"org.apache.kafka.connect.transforms.ExtractField$Key",
+      "transforms.extractInt.field":"user_id"
+    }
+}
