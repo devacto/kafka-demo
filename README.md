@@ -2,7 +2,7 @@
 
 ## Architecture
 
-insert architecture diagram here.
+![architecture](https://github.com/devacto/kafka-demo/raw/master/architecture.png)
 
 ## Overview
 
