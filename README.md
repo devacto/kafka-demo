@@ -1,5 +1,18 @@
 # Real-Time Data Streaming with Apache Kafka
 
+## TO DO
+
+17 March 2024: This repository was created 4 years ago and is due for some rejuvenation.
+
+The following are what I'd like to do:
+
+- [x] Upgrade Kafka to Confluent Platform 7.6 with Apache Kafka 3.6.
+- [] Use Postgres instead of MySQL.
+- [] Use [Shadow Traffic](https://shadowtraffic.io) to simulate traffic.
+- [] Visualise the data using kcat.
+- [] Create a small video to explain this demo repository.
+
+
 ## Architecture
 
 ![architecture](https://github.com/devacto/kafka-demo/raw/master/architecture.png)
