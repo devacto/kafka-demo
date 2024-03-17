@@ -7,10 +7,10 @@
 The following are what I'd like to do:
 
 - [x] Upgrade Kafka to Confluent Platform 7.6 with Apache Kafka 3.6.
-- [] Use Postgres instead of MySQL.
-- [] Use [Shadow Traffic](https://shadowtraffic.io) to simulate traffic.
-- [] Visualise the data using kcat.
-- [] Create a small video to explain this demo repository.
+- [ ] Use Postgres instead of MySQL.
+- [ ] Use [Shadow Traffic](https://shadowtraffic.io) to simulate traffic.
+- [ ] Visualise the data using kcat.
+- [ ] Create a small video to explain this demo repository.
 
 
 ## Architecture
